@@ -203,17 +203,17 @@ def run():
                 left_col, mid_col, right_col = st.columns(3)
 
                 with left_col:
-                    st.image(r"C:\Users\User\Desktop\Streamlit and Dash Projects\Superstore\Images\dollar.png", caption="", width=70)
+                    st.image('https://github.com/gathukalinet/storeanalysis/blob/main/Images/dollar.png', caption="", width=70)
                     st.subheader("Total Sales")
                     st.subheader(products.total_sales(df_filtered))
 
                 with mid_col:
-                    st.image(r"C:\Users\User\Desktop\Streamlit and Dash Projects\Superstore\Images\clothes.png", width=70)
+                    st.image('https://github.com/gathukalinet/storeanalysis/blob/main/Images/clothes.png', width=70)
                     st.subheader("Categories")
                     st.subheader(products.number_of_category(df))
 
                 with right_col:
-                    st.image(r"C:\Users\User\Desktop\Streamlit and Dash Projects\Superstore\Images\online-shopping.png", width=70)
+                    st.image('https://github.com/gathukalinet/storeanalysis/blob/main/Images/online-shopping.png', width=70)
                     st.subheader("Products")
                     st.subheader(products.number_of_products(df_filtered))
                 st.markdown("---")
