@@ -32,7 +32,7 @@ def run():
         df.set_index("Customer_ID", inplace=True)
         return df
 
-    df = load_data(r"C:\Users\User\Desktop\Streamlit and Dash Projects\Superstore\Dataset\shopping_trends_updated.csv")
+    df = load_data('https://raw.githubusercontent.com/gathukalinet/storeanalysis/refs/heads/main/Dataset/shopping_trends_updated.csv')
 
     st.markdown(
         """
